@@ -977,7 +977,7 @@ class Ui_MainWindow(object):
         self.pushButton.setGeometry(QtCore.QRect(150, 240, 321, 61))
         self.pushButton.setObjectName("pushButton")
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_2.setGeometry(QtCore.QRect(40, 210, 101, 23))
+        self.pushButton_2.setGeometry(QtCore.QRect(40, 210, 101, 21))
         self.pushButton_2.setObjectName("pushButton_2")
         self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_3.setGeometry(QtCore.QRect(150, 210, 101, 21))
