@@ -1052,6 +1052,44 @@ class Ui_MainWindow(object):
         self.wordSpaceList[0] = len(self.charNListNoPN)
         
         self.round = -1
+        
+        self.char1 = self.textEdit.toPlainText()
+        # print(char1)
+        self.char2 = self.textEdit_2.toPlainText()
+        # print(char2)
+        self.char3 = self.textEdit_3.toPlainText()
+        # print(char3)
+        self.char4 = self.textEdit_4.toPlainText()
+        # print(char4)
+        self.char5 = self.textEdit_5.toPlainText()
+        # print(char5)
+        
+        self.charSet = [self.char1, self.char2, self.char3, self.char4, self.char5]
+        
+        box1 = self.textEdit
+        # print(char1)
+        box2 = self.textEdit_2
+        # print(char2)
+        box3 = self.textEdit_3
+        # print(char3)
+        box4 = self.textEdit_4
+        # print(char4)
+        box5 = self.textEdit_5
+        # print(char5)
+        
+        self.boxSet = [box1, box2, box3, box4, box5]
+        self.boxDict = {
+            box1: 0,
+            box2: 1,
+            box3: 2,
+            box4: 3,
+            box5: 4
+            }
+        
+        box1.setFocus()
+        #Set up a keypress handler for the input boxes
+        for c in self.boxSet:
+            c.textChanged.connect(self.inputKeyUp)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -1061,27 +1099,27 @@ class Ui_MainWindow(object):
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:50pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">r</p></body></html>"))
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p></body></html>"))
         self.textEdit_5.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:50pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">e</p></body></html>"))
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p></body></html>"))
         self.textEdit_4.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:50pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">t</p></body></html>"))
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p></body></html>"))
         self.textEdit_3.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:50pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">a</p></body></html>"))
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p></body></html>"))
         self.textEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:50pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">c</p></body></html>"))
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p></body></html>"))
         self.pushButton.setText(_translate("MainWindow", "Submit"))
         self.pushButton_2.setText(_translate("MainWindow", "Change Color"))
         self.pushButton_3.setText(_translate("MainWindow", "Change Color"))
@@ -1221,7 +1259,47 @@ class Ui_MainWindow(object):
                 
         
 #------------------------------------------------------------------------------
+    
+    def inputKeyUp(self):
+        
+        char1Temp = self.textEdit.toPlainText()
+        # print(char1)
+        char2Temp = self.textEdit_2.toPlainText()
+        # print(char2)
+        char3Temp = self.textEdit_3.toPlainText()
+        # print(char3)
+        char4Temp = self.textEdit_4.toPlainText()
+        # print(char4)
+        char5Temp = self.textEdit_5.toPlainText()
+        # print(char5)
+        
+        charSetTemp = [char1Temp, char2Temp, char3Temp, char4Temp, char5Temp]
+        
+        for indexCheck in range(len(charSetTemp)):
+            if charSetTemp[indexCheck] != self.charSet[indexCheck]:
+                boxIndex = indexCheck
+                nextBoxIndex = boxIndex
+                if boxIndex < len(charSetTemp) - 1:
+                    nextBoxIndex = boxIndex + 1
+                    nextBox = self.boxSet[nextBoxIndex]
+                    nextBox.setFocus()
+                
 
+                
+        
+        char1 = self.textEdit.toPlainText()
+        # print(char1)
+        char2 = self.textEdit_2.toPlainText()
+        # print(char2)
+        char3 = self.textEdit_3.toPlainText()
+        # print(char3)
+        char4 = self.textEdit_4.toPlainText()
+        # print(char4)
+        char5 = self.textEdit_5.toPlainText()
+        # print(char5)
+        
+        self.charSet = [char1, char2, char3, char4, char5]
+    
     #new
     def colorPress_2(self):
         #textEdit
