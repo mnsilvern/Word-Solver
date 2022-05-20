@@ -240,11 +240,11 @@ wordSpaceList[0] = len(charNListNoPN)
 
 for round in range(roundNum):
     
-    greyPrompt = input('enter your grey letters this round\n')
+    greyPrompt = (input('enter your grey letters this round\n')).lower()
     greyGuess = [greyPrompt]
-    yellowPrompt = input('enter your yellow letters this round\n')
+    yellowPrompt = (input('enter your yellow letters this round\n')).lower()
     yellowGuess = [yellowPrompt]
-    greenPrompt = input('enter green letters this round\n')
+    greenPrompt = (input('enter green letters this round\n')).lower()
     greenGuess = [greenPrompt]
 
     greySetMade = greyLet(greySetMade,greyGuess)

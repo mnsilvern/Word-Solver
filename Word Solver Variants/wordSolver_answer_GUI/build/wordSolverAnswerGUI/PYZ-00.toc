@@ -1,5 +1,5 @@
 ('D:\\Source\\Repos\\word-solver\\word-solver\\Word Solver '
- 'Variants\\wordSolver_answer_GUI_v1\\build\\wordSolverAnswerGUI\\PYZ-00.pyz',
+ 'Variants\\wordSolver_answer_GUI\\build\\wordSolverAnswerGUI\\PYZ-00.pyz',
  [('os', 'D:\\applications\\lib\\os.py', 'PYMODULE'),
   ('subprocess', 'D:\\applications\\lib\\subprocess.py', 'PYMODULE'),
   ('selectors', 'D:\\applications\\lib\\selectors.py', 'PYMODULE'),
@@ -21,8 +21,6 @@
    'D:\\applications\\lib\\importlib\\machinery.py',
    'PYMODULE'),
   ('importlib', 'D:\\applications\\lib\\importlib\\__init__.py', 'PYMODULE'),
-  ('importlib.abc', 'D:\\applications\\lib\\importlib\\abc.py', 'PYMODULE'),
-  ('typing', 'D:\\applications\\lib\\typing.py', 'PYMODULE'),
   ('importlib._bootstrap',
    'D:\\applications\\lib\\importlib\\_bootstrap.py',
    'PYMODULE'),
@@ -32,6 +30,8 @@
   ('importlib.metadata',
    'D:\\applications\\lib\\importlib\\metadata.py',
    'PYMODULE'),
+  ('importlib.abc', 'D:\\applications\\lib\\importlib\\abc.py', 'PYMODULE'),
+  ('typing', 'D:\\applications\\lib\\typing.py', 'PYMODULE'),
   ('configparser', 'D:\\applications\\lib\\configparser.py', 'PYMODULE'),
   ('pathlib', 'D:\\applications\\lib\\pathlib.py', 'PYMODULE'),
   ('urllib.parse', 'D:\\applications\\lib\\urllib\\parse.py', 'PYMODULE'),
@@ -477,5 +477,5 @@
    'PYMODULE'),
   ('functions',
    'D:\\Source\\Repos\\word-solver\\word-solver\\Word Solver '
-   'Variants\\wordSolver_answer_GUI_v1\\functions.py',
+   'Variants\\wordSolver_answer_GUI\\functions.py',
    'PYMODULE')])

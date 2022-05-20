@@ -1,5 +1,5 @@
 ('D:\\Source\\Repos\\word-solver\\word-solver\\Word Solver '
- 'Variants\\wordSolver_guess_GUI_v1\\build\\wordSolverGuessGUI\\PYZ-00.pyz',
+ 'Variants\\wordSolver_guess_GUI\\build\\wordSolverGuessGUI\\PYZ-00.pyz',
  [('os', 'D:\\applications\\lib\\os.py', 'PYMODULE'),
   ('subprocess', 'D:\\applications\\lib\\subprocess.py', 'PYMODULE'),
   ('selectors', 'D:\\applications\\lib\\selectors.py', 'PYMODULE'),
@@ -381,9 +381,9 @@
   ('genericpath', 'D:\\applications\\lib\\genericpath.py', 'PYMODULE'),
   ('posixpath', 'D:\\applications\\lib\\posixpath.py', 'PYMODULE'),
   ('stat', 'D:\\applications\\lib\\stat.py', 'PYMODULE'),
-  ('tracemalloc', 'D:\\applications\\lib\\tracemalloc.py', 'PYMODULE'),
   ('_py_abc', 'D:\\applications\\lib\\_py_abc.py', 'PYMODULE'),
   ('stringprep', 'D:\\applications\\lib\\stringprep.py', 'PYMODULE'),
+  ('tracemalloc', 'D:\\applications\\lib\\tracemalloc.py', 'PYMODULE'),
   ('PyQt5.uic',
    'D:\\applications\\lib\\site-packages\\PyQt5\\uic\\__init__.py',
    'PYMODULE'),
@@ -477,5 +477,5 @@
    'PYMODULE'),
   ('functions',
    'D:\\Source\\Repos\\word-solver\\word-solver\\Word Solver '
-   'Variants\\wordSolver_guess_GUI_v1\\functions.py',
+   'Variants\\wordSolver_guess_GUI\\functions.py',
    'PYMODULE')])

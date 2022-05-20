@@ -1,5 +1,5 @@
-('C:\\Users\\Mark-E-Mark\\.anaconda\\Python '
- 'tests\\wordSolver_answer_v1\\build\\wordSolver\\PYZ-00.pyz',
+('D:\\Source\\Repos\\word-solver\\word-solver\\Word Solver '
+ 'Variants\\wordSolver_answer\\build\\wordSolver\\PYZ-00.pyz',
  [('os', 'D:\\applications\\lib\\os.py', 'PYMODULE'),
   ('subprocess', 'D:\\applications\\lib\\subprocess.py', 'PYMODULE'),
   ('selectors', 'D:\\applications\\lib\\selectors.py', 'PYMODULE'),
@@ -380,7 +380,7 @@
   ('inspect', 'D:\\applications\\lib\\inspect.py', 'PYMODULE'),
   ('token', 'D:\\applications\\lib\\token.py', 'PYMODULE'),
   ('ast', 'D:\\applications\\lib\\ast.py', 'PYMODULE'),
-  ('_py_abc', 'D:\\applications\\lib\\_py_abc.py', 'PYMODULE'),
-  ('tracemalloc', 'D:\\applications\\lib\\tracemalloc.py', 'PYMODULE'),
   ('stringprep', 'D:\\applications\\lib\\stringprep.py', 'PYMODULE'),
+  ('tracemalloc', 'D:\\applications\\lib\\tracemalloc.py', 'PYMODULE'),
+  ('_py_abc', 'D:\\applications\\lib\\_py_abc.py', 'PYMODULE'),
   ('copy', 'D:\\applications\\lib\\copy.py', 'PYMODULE')])

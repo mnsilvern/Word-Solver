@@ -184,12 +184,12 @@ class UI(QMainWindow):
 
     def submitPressed(self):
     #where most of the magic happens
-        #retrieve contents from boxes
-        self.char1 = self.lineEdit1.text()
-        self.char2 = self.lineEdit2.text()
-        self.char3 = self.lineEdit3.text()
-        self.char4 = self.lineEdit4.text()
-        self.char5 = self.lineEdit5.text()
+        #retrieve contents from boxes and lowercase them
+        self.char1 = self.lineEdit1.text().lower()
+        self.char2 = self.lineEdit2.text().lower()
+        self.char3 = self.lineEdit3.text().lower()
+        self.char4 = self.lineEdit4.text().lower()
+        self.char5 = self.lineEdit5.text().lower()
         
         self.charSet = [self.char1, self.char2, self.char3, self.char4, self.char5] 
         
